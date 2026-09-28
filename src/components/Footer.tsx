@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
+import takodaLogo from "../assets/images/takoda-logo.png";
 
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -10,68 +11,96 @@ import { copyEmail } from "../utils/copyEmail";
 
 export function Footer() {
   return (
-    <footer className="footer-container">
-      <div className="site-footer">
-        <h1>Takoda Tavern</h1>
-        <div className="footer-top">
-          <div className="footer-column col1">
-            <p>12365 Pine Bluffs Way</p>
-            <p>Parker, CO 80134</p>
-            <p>(720) 851-5302</p>
-          </div>
-          <div className="footer-column col2">
-            <ul className="footer-navigation">
-              <li>
-                <Link to="/" className="link">
-                  Home
-                </Link>
-              </li>
-              {/* Add other menu items here */}
-              <li>
-                <Link to="/menu" className="link">
-                  Menu
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="link">
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/upcoming" className="link">
-                  Upcoming Events
-                </Link>
-              </li>
-              <li>
-                <Link to="/photos" className="link">
-                  Photos
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-column col3">
-            <ul className="social-buttons">
-              <li>
-                <a href={urls.facebook} target="_blank" rel="noopener noreferrer">
-                  <Icon icon={faFacebook} className="social-icons yelp" />
-                </a>
-              </li>
-              <li>
-                <a onClick={copyEmail}>
-                  <Icon icon={faEnvelope} className="social-icon envelope" />
-                </a>
-              </li>
-            </ul>
-          </div>
+    <footer className="site-footer">
+      <div className="footer-top">
+        <div className="column">
+          <img src={takodaLogo} className="footer-logo" />
+          <p>12365 Pine Bluffs Way</p>
+          <p>Parker, CO 80134</p>
+          <p>(720) 851-5302</p>
         </div>
-        <p className="copyright">
-          © 2026 Takoda Tavern, Parker, CO. Website developed by{" "}
-          <a href="https://npotter.com/" target="_blank" rel="noopener noreferrer">
-            npotter.com
-          </a>
-          .
-        </p>
+        <dl className="column">
+          <div className="footer-hours">
+            <dt>MON:</dt>
+            <dd>11 AM - 12 AM</dd>
+          </div>
+          <div className="footer-hours">
+            <dt>TUES:</dt>
+            <dd>11 AM - 12 AM</dd>
+          </div>
+          <div className="footer-hours">
+            <dt>WED:</dt>
+            <dd>11 AM - 12 AM</dd>
+          </div>
+          <div className="footer-hours">
+            <dt>THUR:</dt>
+            <dd>11 AM - 12 AM</dd>
+          </div>
+          <div className="footer-hours">
+            <dt>FRI:</dt>
+            <dd>11 AM - 2 AM</dd>
+          </div>
+          <div className="footer-hours">
+            <dt>SAT:</dt>
+            <dd>8 AM - 2 AM</dd>
+          </div>
+          <div className="footer-hours">
+            <dt>SUN:</dt>
+            <dd>8 AM - 12 AM</dd>
+          </div>
+        </dl>
+        <nav className="column">
+          <ul className="footer-navigation">
+            <li>
+              <Link to="/" className="link">
+                Home
+              </Link>
+            </li>
+            {/* Add other menu items here */}
+            <li>
+              <Link to="/menu" className="link">
+                Menu
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="link">
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/upcoming" className="link">
+                Upcoming Events
+              </Link>
+            </li>
+            <li>
+              <Link to="/photos" className="link">
+                Photos
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className="column">
+          <ul className="footer-contact">
+            <li>
+              <a href={urls.facebook} target="_blank" rel="noopener noreferrer">
+                <Icon icon={faFacebook} className="footer-icon facebook" />
+              </a>
+            </li>
+            <li>
+              <a onClick={copyEmail}>
+                <Icon icon={faEnvelope} className="footer-icon envelope" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <p className="copyright">
+        © 2026 Takoda Tavern, Parker, CO. Website developed by{" "}
+        <a href="https://npotter.com/" target="_blank" rel="noopener noreferrer">
+          npotter.com
+        </a>
+        .
+      </p>
     </footer>
   );
 }

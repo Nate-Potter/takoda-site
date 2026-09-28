@@ -28,10 +28,11 @@ ul {
   background-color: rgba(255, 255, 255, 0);
   /* backdrop-filter: blur(25px); */
 }
-.site-logo {
+.header-logo {
   display: flex;
   justify-content: center;
   height: 100%;
+  object-fit: contain;
   float: left;
 }
 
@@ -40,6 +41,7 @@ ul {
   flex-direction: row;
   float: right;
   margin-left: auto;
+  padding-inline: 10px;
 }
 .navbar-links {
   display: flex;
@@ -49,7 +51,7 @@ ul {
 
 .link {
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5;
   font-weight: 200;
   margin-inline: 10px;
@@ -63,16 +65,16 @@ ul {
     text-shadow 0.1s ease-in-out;
 }
 
-.social-buttons {
+.navbar-contact {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  transform: scale(85%);
   justify-content: space-between;
 }
-.social-buttons a {
-  margin-inline: 10px;
+
+.navbar-icon {
+  margin-inline: 8px;
   font-family: "Brandink";
 }
 
@@ -156,14 +158,14 @@ ul {
     padding-inline: 10px;
   }
 
-  .mobile-menu .social-buttons {
+  .mobile-menu .navbar-contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 10px auto;
   }
-  .mobile-menu .social-icon {
+  .mobile-menu .navbar-icon {
     margin-inline: 30px;
     transform: scale(1.5);
   }

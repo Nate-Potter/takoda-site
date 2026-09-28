@@ -51,16 +51,16 @@ export function Header() {
               ))}
             </ul>
 
-            <ul className="social-buttons">
+            <ul className="navbar-contact">
               <li>
                 <a href={urls.facebook} target="_blank" rel="noopener noreferrer">
-                  <Icon icon={faFacebook} className="social-icon facebook" />
+                  <Icon icon={faFacebook} className="navbar-icon facebook" />
                 </a>
               </li>
 
               <li>
                 <a onClick={copyEmail}>
-                  <Icon icon={faEnvelope} className="social-icon envelope" />
+                  <Icon icon={faEnvelope} className="navbar-icon envelope" />
                 </a>
               </li>
             </ul>
@@ -70,8 +70,8 @@ export function Header() {
 
       {/* Desktop Navigation */}
       <nav className="header-bar">
-        <Link className="site-logo" to="/">
-          <img src={takodaLogo}></img>
+        <Link to="/">
+          <img src={takodaLogo} className="header-logo" />
         </Link>
 
         <div className="navigation">
@@ -86,16 +86,16 @@ export function Header() {
             ))}
           </ul>
 
-          <ul className="social-buttons">
+          <ul className="navbar-contact">
             <li>
               <a href={urls.facebook} target="_blank" rel="noopener noreferrer">
-                <Icon icon={faFacebook} className="social-icon facebook" />
+                <Icon icon={faFacebook} className="navbar-icon facebook" />
               </a>
             </li>
 
             <li>
               <a onClick={copyEmail}>
-                <Icon icon={faEnvelope} className="social-icon envelope" />{" "}
+                <Icon icon={faEnvelope} className="navbar-icon envelope" />{" "}
               </a>
             </li>
           </ul>

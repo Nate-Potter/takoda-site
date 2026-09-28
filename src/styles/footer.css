@@ -1,35 +1,51 @@
 /*-----------------------------------FOOTER--------------------------------------------------*/
 
-.footer-container {
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: 100%;
   z-index: 0;
   background-color: white;
   padding-top: 20px;
 }
 
-.site-footer {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 75%;
-  padding: 10px auto;
-  margin: 10px auto;
-}
-.site-footer h1 {
-  font-size: 28px;
-  font-weight: 100;
-  margin-left: 10%;
-  color: black;
-  font-family: "Brandink";
-}
 .footer-top {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 75%;
+  margin: 20px auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  border-style: solid;
+  text-align: left;
+  margin-inline: 10px;
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  height: 25%;
+}
+
+.footer-hours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0 auto;
-  padding-bottom: 10px;
+  width: 60%;
+}
+dd {
+  text-align: left;
+  border-style: solid;
 }
 
 .footer-navigation {
@@ -39,39 +55,22 @@
   margin: 0 auto;
 }
 
-.site-footer .link {
+.link {
   margin: 0 20px;
   text-decoration: none;
   font-size: 16px;
 }
-.site-footer .link:hover {
+.link:hover {
   color: rgb(0, 69, 133);
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
 }
 
-.footer-column {
-  margin-top: 10px;
-}
-
-.site-footer .social-buttons {
+.footer-icons {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  transform: scale(0.75);
-}
-
-.col4 p {
-  font-size: 22px;
-}
-
-.col4 input {
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid white;
-  outline: none; /*Remove input focus outline*/
-  margin-top: 4px;
 }
 
 .copyright {
@@ -96,12 +95,6 @@
     padding-bottom: 10px;
     padding-top: 40px;
     margin: 20px auto;
-  }
-  .site-footer h1 {
-    font-size: 22px;
-    font-weight: 100;
-    margin: 0 auto;
-    text-align: center;
   }
 
   .footer-top {

@@ -43,15 +43,9 @@ body {
 /* ----------------------------------- FONTS ------------------------------------ */
 
 @font-face {
-  font-family: "Space";
-  src: url("assets/fonts/SpaceGrotesk-VariableFont_wght.ttf");
-}
-
-@font-face {
   font-family: "Gruppo";
   src: url("assets/fonts/Gruppo-Regular.ttf");
 }
-
 @font-face {
   font-family: "BrandinkLight";
   src: url("assets/fonts/BrandinkSans-Light.otf");
@@ -64,20 +58,13 @@ body {
 /*----------------------------------- ICONS --------------------------------------------------*/
 
 /* Style all font awesome icons */
-.social-icon {
-  /* margin-bottom: 20px; */
-  /* padding: 20px; */
+/* .social-icon {
   font-size: 28px;
   width: 26px;
   text-align: center;
-}
+} */
 
-.social-icon:hover {
-  opacity: 0.9;
-  color: black;
-}
 .envelope {
-  transform: scale(95%);
 }
 .envelope:hover {
   color: red;
