@@ -14,12 +14,17 @@ export function Footer() {
     <footer className="site-footer">
       <div className="footer-top">
         <div className="column">
-          <img src={takodaLogo} className="footer-logo" />
-          <p>12365 Pine Bluffs Way</p>
-          <p>Parker, CO 80134</p>
-          <p>(720) 851-5302</p>
+          <div className="footer-logo">
+            <img src={takodaLogo} />
+          </div>
+          <div className="footer-address">
+            <p>12365 Pine Bluffs Way</p>
+            <p>Parker, CO 80134</p>
+            <p>(720) 851-5302</p>
+          </div>
         </div>
         <dl className="column">
+          <h2>Hours</h2>
           <div className="footer-hours">
             <dt>MON:</dt>
             <dd>11 AM - 12 AM</dd>
@@ -50,6 +55,7 @@ export function Footer() {
           </div>
         </dl>
         <nav className="column">
+          <h2>Site</h2>
           <ul className="footer-navigation">
             <li>
               <Link to="/" className="link">
@@ -80,6 +86,7 @@ export function Footer() {
           </ul>
         </nav>
         <div className="column">
+          <h2>Contact</h2>
           <ul className="footer-contact">
             <li>
               <a href={urls.facebook} target="_blank" rel="noopener noreferrer">

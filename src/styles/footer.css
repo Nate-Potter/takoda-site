@@ -15,62 +15,88 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 75%;
+  width: 70%;
   margin: 20px auto;
 }
 
 .column {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 25%;
-  text-align: center;
-  border-style: solid;
-  text-align: left;
   margin-inline: 10px;
+  font-family: "Brandink";
+  /* border-style: solid; */
+}
+.column h2 {
   text-align: center;
+  font-family: "Brandink";
+  font-size: 1.2em;
+  padding: 10px;
+  justify-content: start;
 }
 
 .footer-logo {
   display: flex;
   justify-content: center;
-  height: 25%;
+  margin: 20px auto;
+  height: 15%;
+}
+.footer-logo img {
+  display: flex;
+  width: 100%;
+  object-fit: contain;
+}
+.footer-address {
+  margin: 20px auto;
+}
+.footer-address p {
+  font-family: "Brandink";
+  text-align: left;
 }
 
 .footer-hours {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
   width: 60%;
+  margin: 2px auto;
 }
-dd {
-  text-align: left;
-  border-style: solid;
+.footer-hours dt {
+  margin-right: auto;
+  font-family: "Brandink";
+}
+.footer-hours dd {
+  margin-left: auto;
+  font-family: "Brandink";
 }
 
 .footer-navigation {
   display: flex;
   flex-direction: column;
-  align-items: start;
   margin: 0 auto;
 }
 
-.link {
-  margin: 0 20px;
+.footer-navigation li {
+  margin-block: 4px;
+  text-align: left;
+}
+
+.footer-navigation .link {
   text-decoration: none;
   font-size: 16px;
 }
-.link:hover {
-  color: rgb(0, 69, 133);
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+.footer-navigation .link:hover {
+  color: rgb(252, 248, 190);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
 
-.footer-icons {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.footer-contact {
+  margin: 0 auto;
+}
+.footer-icon {
+  transform: scale(125%);
+  margin: 4px auto;
 }
 
 .copyright {
