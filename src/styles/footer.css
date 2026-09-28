@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
   z-index: 0;
-  background-color: white;
+  background-color: black;
   padding-top: 20px;
 }
 
@@ -14,9 +14,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  width: 70%;
+  align-items: flex-start;
+  width: 75%;
+  height: 100%;
   margin: 20px auto;
+  color: rgb(255, 253, 231);
 }
 
 .column {
@@ -25,16 +27,25 @@
   align-items: center;
   justify-content: center;
   width: 25%;
-  margin-inline: 10px;
+  min-height: 100%;
+  margin: 0 10px;
   font-family: "Brandink";
-  /* border-style: solid; */
+  border-style: solid;
 }
 .column h2 {
   text-align: center;
-  font-family: "Brandink";
-  font-size: 1.2em;
+  font-family: "CaviarDreams";
+  font-size: 2em;
   padding: 10px;
-  justify-content: start;
+  margin-top: 0;
+}
+.column h3 {
+  text-align: center;
+  font-family: "BrandinkLight";
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 0;
 }
 
 .footer-logo {
@@ -52,7 +63,7 @@
   margin: 20px auto;
 }
 .footer-address p {
-  font-family: "Brandink";
+  font-family: "BrandinkLight";
   text-align: left;
 }
 
@@ -64,11 +75,11 @@
 }
 .footer-hours dt {
   margin-right: auto;
-  font-family: "Brandink";
+  font-family: "BrandinkLight";
 }
 .footer-hours dd {
   margin-left: auto;
-  font-family: "Brandink";
+  font-family: "BrandinkLight";
 }
 
 .footer-navigation {
@@ -80,29 +91,30 @@
 .footer-navigation li {
   margin-block: 4px;
   text-align: left;
+  font: "BrandinkLight";
 }
 
 .footer-navigation .link {
   text-decoration: none;
   font-size: 16px;
-}
-.footer-navigation .link:hover {
-  color: rgb(252, 248, 190);
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  font: "BrandinkLight";
 }
 
 .footer-contact {
+  display: flex;
+  flex-direction: row;
   margin: 0 auto;
 }
 .footer-icon {
   transform: scale(125%);
-  margin: 4px auto;
+  margin: 20px 8px;
 }
 
 .copyright {
   justify-content: center;
   font-size: 12px;
   margin: 0 auto;
+  color: white;
 }
 
 @media (max-width: 800px) {

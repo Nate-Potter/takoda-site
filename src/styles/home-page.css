@@ -10,7 +10,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  color: rgb(252, 248, 190);
+  color: rgb(255, 253, 231);
   font-family: "Brandink";
 }
 
@@ -80,7 +80,7 @@
 }
 
 .home-title h2 {
-  font-family: "Brandink";
+  font-family: "CaviarDreams";
   font-size: 1.8em;
   font-weight: 400;
   line-height: 1.5;
@@ -119,8 +119,9 @@
 
 .home-info h2 {
   color: rgb(255, 255, 255);
-  font-family: "Brandink";
+  font-family: "BrandinkLight";
   font-size: 2em;
+  font-weight: 100;
   margin-bottom: 20px;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 }
@@ -133,14 +134,14 @@
 
 .home-info li {
   padding: 6px 0;
-  font-family: "BrandinkLight";
+  font-family: "CaviarDreams";
   font-size: 1.1em;
   color: white;
 }
 
 .home-info p {
   padding: 6px 0;
-  font-family: "BrandinkLight";
+  font-family: "CaviarDreams";
   font-size: 1em;
 }
 

@@ -13,7 +13,9 @@ ul {
   background-attachment: fixed;
   width: 100%;
   position: fixed;
-  color: rgb(252, 248, 190);
+  /* color: rgb(252, 248, 190); */
+
+  color: rgb(255, 253, 231);
 }
 
 .mobile-menu-button {
@@ -49,13 +51,13 @@ ul {
   align-items: center;
 }
 
-.link {
+.header-bar .link {
   text-decoration: none;
   font-size: 1em;
   line-height: 1.5;
   font-weight: 200;
   margin-inline: 10px;
-  font-family: "Brandink";
+  font-family: "CaviarDreams";
 }
 .navbar-links .link:hover {
   color: rgb(174, 174, 174);

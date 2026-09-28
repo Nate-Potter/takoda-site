@@ -54,6 +54,14 @@ body {
   font-family: "Brandink";
   src: url("assets/fonts/BrandinkSans.otf");
 }
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("assets/fonts/CaviarDreams.ttf");
+}
+@font-face {
+  font-family: "CaviarDreamsBold";
+  src: url("assets/fonts/CaviarDreams_Bold.ttf");
+}
 
 /*----------------------------------- ICONS --------------------------------------------------*/
 

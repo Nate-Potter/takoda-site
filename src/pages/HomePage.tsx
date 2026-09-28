@@ -13,9 +13,9 @@ export function HomePage() {
         <div className="row-filter">
           <div className="home-title">
             <h1>
-              Takoda
+              TAKODA
               <br />
-              Tavern
+              TAVERN
             </h1>
             <h2>Good food. Cold drinks. Good company.</h2>
           </div>
