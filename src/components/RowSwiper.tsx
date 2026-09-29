@@ -1,10 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Pagination, Autoplay } from "swiper/modules";
+import { EffectFade, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import "../styles/swiper.css";
 
 import takoda6 from "../assets/images/takoda6.jpeg";
 import takoda7 from "../assets/images/takoda7.jpeg";
@@ -36,35 +35,30 @@ const slidesData = [
 
 export function RowSwiper() {
   return (
-    <div className="row-swiper">
-      <Swiper
-        modules={[EffectFade, Pagination, Autoplay]}
-        effect="fade"
-        slidesPerView={1}
-        spaceBetween={10}
-        loop
-        grabCursor
-        centeredSlides
-        autoplay={{
-          delay: 4500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          el: ".swiper-pagination",
-          clickable: true,
-          dynamicBullets: true,
-        }}
-        className="menu-swiper__slider">
-        {slidesData.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <img src={slide.image} alt={slide.caption} className="swiper-img" />
-          </SwiperSlide>
-        ))}
-
-        <div className="slider-controller">
-          <div className="swiper-pagination"></div>
-        </div>
-      </Swiper>
-    </div>
+    <Swiper
+      modules={[EffectFade, Autoplay]}
+      effect="fade"
+      fadeEffect={{
+        crossFade: true,
+      }}
+      slidesPerView={1}
+      loop
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
+      speed={500}
+      className="swiper-container">
+      {/* Mapping the slide and index (number for even/odd to zoom in/out) */}
+      {slidesData.map((slide, index) => (
+        <SwiperSlide key={slide.id}>
+          <img
+            src={slide.image}
+            alt={slide.caption}
+            className={`swiper-img ${index % 2 === 0 ? "zoom-in" : "zoom-out"}`}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }

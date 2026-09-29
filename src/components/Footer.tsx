@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import "../styles/footer.css";
-import takodaLogo from "../assets/images/takoda-logo.png";
-
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -56,28 +54,28 @@ export function Footer() {
           <h3>Site</h3>
           <ul className="footer-navigation">
             <li>
-              <Link to="/" className="link">
+              <Link to="/" className="footer-link">
                 Home
               </Link>
             </li>
             {/* Add other menu items here */}
             <li>
-              <Link to="/menu" className="link">
+              <Link to="/menu" className="footer-link">
                 Menu
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="link">
+              <Link to="/contact" className="footer-link">
                 Contact Us
               </Link>
             </li>
             <li>
-              <Link to="/upcoming" className="link">
+              <Link to="/upcoming" className="footer-link">
                 Upcoming Events
               </Link>
             </li>
             <li>
-              <Link to="/photos" className="link">
+              <Link to="/photos" className="footer-link">
                 Photos
               </Link>
             </li>

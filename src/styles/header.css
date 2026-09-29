@@ -5,16 +5,8 @@ ul {
 
 .site-header {
   z-index: 10;
-  /* background-color: rgb(249, 255, 230); */
-  background-image: var(--background1);
-  background-size: cover;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
-  position: fixed;
-  /* color: rgb(252, 248, 190); */
-
+  position: absolute;
   color: rgb(255, 253, 231);
 }
 
@@ -51,13 +43,13 @@ ul {
   align-items: center;
 }
 
-.header-bar .link {
+.navbar-links .link {
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.3em;
   line-height: 1.5;
   font-weight: 200;
   margin-inline: 10px;
-  font-family: "CaviarDreams";
+  font-family: "GaretBook";
 }
 .navbar-links .link:hover {
   color: rgb(174, 174, 174);
@@ -76,8 +68,8 @@ ul {
 }
 
 .navbar-icon {
-  margin-inline: 8px;
-  font-family: "Brandink";
+  margin: 0 10px;
+  font-size: 1.5em;
 }
 
 @media (max-width: 800px) {

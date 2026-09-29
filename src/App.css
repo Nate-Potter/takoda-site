@@ -62,6 +62,10 @@ body {
   font-family: "CaviarDreamsBold";
   src: url("assets/fonts/CaviarDreams_Bold.ttf");
 }
+@font-face {
+  font-family: "GaretBook";
+  src: url("assets/fonts/Garet-Book.ttf");
+}
 
 /*----------------------------------- ICONS --------------------------------------------------*/
 

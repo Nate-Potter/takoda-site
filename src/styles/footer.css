@@ -7,7 +7,6 @@
   width: 100%;
   z-index: 0;
   background-color: black;
-  padding-top: 20px;
 }
 
 .footer-top {
@@ -17,7 +16,7 @@
   align-items: flex-start;
   width: 75%;
   height: 100%;
-  margin: 20px auto;
+  margin: 80px auto;
   color: rgb(255, 253, 231);
 }
 
@@ -27,25 +26,22 @@
   align-items: center;
   justify-content: center;
   width: 25%;
-  min-height: 100%;
   margin: 0 10px;
-  font-family: "Brandink";
-  border-style: solid;
 }
 .column h2 {
   text-align: center;
-  font-family: "CaviarDreams";
+  font-family: "BrandinkLight";
   font-size: 2em;
   padding: 10px;
-  margin-top: 0;
+  margin-block: 0 10px;
 }
 .column h3 {
   text-align: center;
   font-family: "BrandinkLight";
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 600;
   padding: 10px;
-  margin-top: 0;
+  margin-block: 0 10px;
 }
 
 .footer-logo {
@@ -64,6 +60,8 @@
 }
 .footer-address p {
   font-family: "BrandinkLight";
+  font-size: 1.2em;
+  line-height: 1.25;
   text-align: left;
 }
 
@@ -72,6 +70,7 @@
   flex-direction: row;
   width: 60%;
   margin: 2px auto;
+  font-size: 1.2em;
 }
 .footer-hours dt {
   margin-right: auto;
@@ -87,26 +86,30 @@
   flex-direction: column;
   margin: 0 auto;
 }
-
 .footer-navigation li {
   margin-block: 4px;
-  text-align: left;
-  font: "BrandinkLight";
 }
 
-.footer-navigation .link {
+.footer-link {
   text-decoration: none;
-  font-size: 16px;
-  font: "BrandinkLight";
+  font-family: "BrandinkLight";
+  font-size: 1.2em;
+  text-align: left;
 }
-
+.footer-link:hover {
+  color: rgb(174, 174, 174);
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+  transition:
+    color 0.2s ease-in-out,
+    text-shadow 0.1s ease-in-out;
+}
 .footer-contact {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
 }
 .footer-icon {
-  transform: scale(125%);
+  font-size: 1.6em;
   margin: 20px 8px;
 }
 
