@@ -105,7 +105,16 @@
 /*----------------------------------- ROW -----------------------------------------*/
 
 .home-row {
-  background-color: black;
+  /* background: linear-gradient(
+    135deg,
+    #454545 0%,
+    #101010 25%,
+    #000000 50%,
+    #111111 75%,
+    #454545 100%
+  ); */
+  background: linear-gradient(135deg, #000000 0%, #1c1c1c 50%, #080808 100%);
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -139,7 +148,7 @@
 .row-text h3 {
   max-width: 75%;
   padding: 20px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 253, 231);
   font-family: "GaretBook";
   font-size: 2em;
   font-weight: 100;
@@ -168,6 +177,30 @@
   color: white;
 }
 
+.row-hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  text-align: center;
+  margin: 2px auto;
+}
+.operating-hours {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 2px auto;
+  font-size: 1.3em;
+}
+.operating-hours dt {
+  margin-right: auto;
+  font-family: "GaretBook";
+}
+.operating-hours dd {
+  margin-left: auto;
+  font-family: "GaretBook";
+}
+
 .row-media {
   box-sizing: border-box;
   width: 50%;
@@ -182,9 +215,6 @@
   height: 100%;
   margin: 0;
   border: 0;
-}
-
-.row-media img {
   object-fit: cover;
 }
 
@@ -300,15 +330,20 @@
   .row-text {
     width: 100%;
     height: fit-content;
-    margin: 20px auto;
+    margin: 10px auto;
+    padding-top: 20px;
+    border-style: solid;
   }
   .row-text h2 {
     max-width: 80%;
     margin-block: 10px;
     padding: 0;
-    font-size: 2.2em;
+    font-size: 2.1em;
     line-height: 1.25;
     text-align: center;
+  }
+  .row-text h3 {
+    font-size: 1.5em;
   }
   .row-text p {
     font-size: 1.2em;
@@ -317,14 +352,22 @@
     font-size: 1.2em;
   }
 
-  .row-text.right {
-    width: 100%;
-    margin: 0 auto;
+  .row-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    text-align: center;
+    margin: 2px auto;
   }
-  .row-text.left {
+  .operating-hours {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    margin: 0 auto;
+    margin: 2px auto;
+    font-size: 1.3em;
   }
+
   .row-media {
     width: 100%;
     justify-content: center;

@@ -6,11 +6,11 @@ import takodaLogo from "../assets/images/takoda-logo.png";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faPhone, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 import { urls } from "../constants/urls";
 
-import { copyEmail } from "../utils/copyEmail";
+import { copyEmail, copyPhone } from "../utils/copyOnClick";
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -68,6 +68,12 @@ export function Header() {
                     <Icon icon={faEnvelope} className="navbar-icon envelope" />
                   </a>
                 </li>
+
+                <li>
+                  <a onClick={copyPhone}>
+                    <Icon icon={faPhone} className="navbar-icon phone" />{" "}
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -96,6 +102,11 @@ export function Header() {
             <li>
               <a onClick={copyEmail}>
                 <Icon icon={faEnvelope} className="navbar-icon envelope" />{" "}
+              </a>
+            </li>
+            <li>
+              <a onClick={copyPhone}>
+                <Icon icon={faPhone} className="navbar-icon phone" />{" "}
               </a>
             </li>
           </ul>

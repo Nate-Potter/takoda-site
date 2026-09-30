@@ -69,8 +69,8 @@
 .footer-hours {
   display: flex;
   flex-direction: row;
-  width: 60%;
-  margin: 2px auto;
+  width: 75%;
+  margin: 4px auto;
   font-size: 1.2em;
 }
 .footer-hours dt {

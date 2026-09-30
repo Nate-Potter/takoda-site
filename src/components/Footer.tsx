@@ -3,9 +3,10 @@ import "../styles/footer.css";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import { urls } from "../constants/urls";
-import { copyEmail } from "../utils/copyEmail";
+import { copyEmail, copyPhone } from "../utils/copyOnClick";
 
 export function Footer() {
   return (
@@ -22,19 +23,7 @@ export function Footer() {
         <dl className="column">
           <h3>Hours</h3>
           <div className="footer-hours">
-            <dt>MON:</dt>
-            <dd>11 AM - 12 AM</dd>
-          </div>
-          <div className="footer-hours">
-            <dt>TUES:</dt>
-            <dd>11 AM - 12 AM</dd>
-          </div>
-          <div className="footer-hours">
-            <dt>WED:</dt>
-            <dd>11 AM - 12 AM</dd>
-          </div>
-          <div className="footer-hours">
-            <dt>THUR:</dt>
+            <dt>MON-THUR:</dt>
             <dd>11 AM - 12 AM</dd>
           </div>
           <div className="footer-hours">
@@ -92,6 +81,11 @@ export function Footer() {
             <li>
               <a onClick={copyEmail}>
                 <Icon icon={faEnvelope} className="footer-icon envelope" />
+              </a>
+            </li>
+            <li>
+              <a onClick={copyPhone}>
+                <Icon icon={faPhone} className="footer-icon phone" />
               </a>
             </li>
           </ul>

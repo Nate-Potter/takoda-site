@@ -86,6 +86,11 @@ body {
 .facebook:hover {
   color: #1877f2;
 }
+.phone {
+}
+.phone:hover {
+  color: #00ec10;
+}
 /* For social icons in social-buttons */
 .social-buttons .social-icon {
   background: transparent;

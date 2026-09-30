@@ -33,6 +33,39 @@ export function HomePage() {
       </div>
 
       <div className="home-row">
+        <div className="row-text">
+          <h2>Weekday Happy Hour</h2>
+          <h3>
+            Monday - Friday
+            <br />
+            3:00 PM - 8:00 PM
+          </h3>
+          <h2>Hours</h2>
+          <dl className="row-hours">
+            <div className="operating-hours">
+              <dt>MON-THUR:</dt>
+              <dd>11 AM - 12 AM</dd>
+            </div>
+            <div className="operating-hours">
+              <dt>FRI:</dt>
+              <dd>11 AM - 2 AM</dd>
+            </div>
+            <div className="operating-hours">
+              <dt>SAT:</dt>
+              <dd>8 AM - 2 AM</dd>
+            </div>
+            <div className="operating-hours">
+              <dt>SUN:</dt>
+              <dd>8 AM - 12 AM</dd>
+            </div>
+          </dl>
+        </div>
+        <div className="row-media">
+          <img src={takodaBar} alt="Inside Takoda Tavern" />
+        </div>
+      </div>
+
+      <div className="home-row">
         <div className="row-media">
           <RowSwiper />
         </div>
@@ -53,22 +86,6 @@ export function HomePage() {
           <Link to="/menu" className="button1">
             Explore the Menu
           </Link>
-        </div>
-      </div>
-
-      <div className="home-row">
-        <div className="row-text">
-          <h2>Weekday Happy Hour</h2>
-
-          <p>
-            Make your weekdays a little better. Join us Monday through Friday from 3PM–8PM for Happy
-            Hour, featuring appetizer and drink specials. Grab a seat, bring some friends, and stay
-            awhile.
-          </p>
-          <h3>MON-FRI from 3:00 PM - 8:00 PM</h3>
-        </div>
-        <div className="row-media">
-          <img src={takodaBar} alt="Inside Takoda Tavern" />
         </div>
       </div>
 

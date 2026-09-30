@@ -10,7 +10,6 @@ import takoda7 from "../assets/images/takoda7.jpeg";
 import takoda8 from "../assets/images/takoda8.jpeg";
 import takoda9 from "../assets/images/takoda9.jpeg";
 import takoda10 from "../assets/images/takoda10.jpeg";
-import takoda11 from "../assets/images/takoda11.jpeg";
 import takoda12 from "../assets/images/takoda12.jpeg";
 
 const slidesData = [
@@ -50,7 +49,7 @@ export function RowSwiper() {
   return (
     <Swiper
       modules={[EffectFade, Autoplay]}
-      effect="fade"
+      effect="slide"
       fadeEffect={{
         crossFade: true,
       }}
