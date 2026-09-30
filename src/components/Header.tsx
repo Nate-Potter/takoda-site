@@ -22,58 +22,58 @@ export function Header() {
   const navLinks = [
     { label: "Home", path: "/" },
     { label: "Menu", path: "/menu" },
-    { label: "Contact Us", path: "/contact" },
-    { label: "Upcoming Events", path: "/upcoming" },
+    { label: "Contact", path: "/contact" },
+    { label: "Upcoming", path: "/upcoming" },
     { label: "Photos", path: "/photos" },
   ];
 
   return (
     <header className="site-header">
-      {/* Mobile Menu */}
-      {/* Mobile Menu Button -- This button is hidden from desktop version with CSS*/}
-      <button className="mobile-menu-button" onClick={toggleMobileMenu}>
-        {isMobileMenuOpen ? <p></p> : <Icon icon={faBars} className="menu-icon" />}
-      </button>
-      {isMobileMenuOpen && (
-        <nav className="mobile-menu">
-          <button className="mobile-menu-close-button" onClick={toggleMobileMenu}>
-            <Icon icon={faXmark} className="close-icon" />
-          </button>
-          <div className="mobile-navigation">
-            {/* Map the navLinks array we created for navigation routing*/}
-            <ul className="navbar-links">
-              {navLinks.map((link) => (
-                <li key={link.path}>
-                  <Link to={link.path} className="link" onClick={toggleMobileMenu}>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <ul className="navbar-contact">
-              <li>
-                <a href={urls.facebook} target="_blank" rel="noopener noreferrer">
-                  <Icon icon={faFacebook} className="navbar-icon facebook" />
-                </a>
-              </li>
-
-              <li>
-                <a onClick={copyEmail}>
-                  <Icon icon={faEnvelope} className="navbar-icon envelope" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      )}
-
-      {/* Desktop Navigation */}
       <nav className="header-bar">
         <Link to="/">
           <img src={takodaLogo} className="header-logo" />
         </Link>
 
+        {/* Mobile Menu */}
+        {/* Mobile Menu Button -- This button is hidden from desktop version with CSS*/}
+        <button className="open-button" onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? <p></p> : <Icon icon={faBars} className="open-icon" />}
+        </button>
+        {isMobileMenuOpen && (
+          <nav className="mobile-navigation">
+            <button className="close-button" onClick={toggleMobileMenu}>
+              <Icon icon={faXmark} className="close-icon" />
+            </button>
+            <div className="navigation-container">
+              {/* Map the navLinks array we created for navigation routing*/}
+              <ul className="navbar-links">
+                {navLinks.map((link) => (
+                  <li key={link.path}>
+                    <Link to={link.path} className="link" onClick={toggleMobileMenu}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
+              <ul className="navbar-contact">
+                <li>
+                  <a href={urls.facebook} target="_blank" rel="noopener noreferrer">
+                    <Icon icon={faFacebook} className="navbar-icon facebook" />
+                  </a>
+                </li>
+
+                <li>
+                  <a onClick={copyEmail}>
+                    <Icon icon={faEnvelope} className="navbar-icon envelope" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        )}
+
+        {/* Desktop Navigation */}
         <div className="navigation">
           <ul className="navbar-links">
             {/* Map the navLinks array we created for navigation routing*/}

@@ -16,7 +16,8 @@
   align-items: flex-start;
   width: 75%;
   height: 100%;
-  margin: 80px auto;
+  margin: 0 auto;
+  padding-block: 100px 50px;
   color: rgb(255, 253, 231);
 }
 
@@ -44,7 +45,7 @@
   margin-block: 0 10px;
 }
 
-.footer-logo {
+/* .footer-logo {
   display: flex;
   justify-content: center;
   margin: 20px auto;
@@ -54,7 +55,7 @@
   display: flex;
   width: 100%;
   object-fit: contain;
-}
+} */
 .footer-address {
   margin: 20px auto;
 }

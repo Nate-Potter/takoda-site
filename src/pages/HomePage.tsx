@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import takodaOutside from "../assets/images/takoda4.jpeg";
-import takodaBar from "../assets/images/takoda10.jpeg";
+import takodaBar from "../assets/images/takoda11.jpeg";
 import takodaMusic from "../assets/images/takoda-music.png";
 import { HeroSwiper } from "../components/HeroSwiper";
 import { RowSwiper } from "../components/RowSwiper";
@@ -21,7 +21,7 @@ export function HomePage() {
             </h1>
             <h2>Here, everyone is a friend.</h2>
             <div className="hero-buttons">
-              <Link to="/menu" className="button1">
+              <Link to="/menu" className="button1 focus">
                 Explore Our Menu
               </Link>
               <Link to="/upcoming" className="button1">
@@ -33,49 +33,42 @@ export function HomePage() {
       </div>
 
       <div className="home-row">
-        <div className="row-text">
-          <h2>Welcome to Takoda</h2>
-          <p>
-            Takoda is a neighborhood tavern built around good food, good drinks, and good company.
-            Whether you're grabbing a bite, meeting up with friends, or settling in for a few
-            drinks, there's always a reason to stay awhile.
-            <br />
-            <br />
-            Our menu brings together satisfying tavern favorites and dishes made to pair perfectly
-            with a drink and good conversation.
-          </p>
-
-          <Link to="/menu" className="row-button">
-            View Menu
-          </Link>
-        </div>
-        <div className="row-media">
-          <img src={takodaOutside} alt="Takoda Tavern" />
-        </div>
-      </div>
-
-      <div className="home-row">
         <div className="row-media">
           <RowSwiper />
         </div>
         <div className="row-text">
           <h2>Food, Drinks & Good Times</h2>
           <p>
-            From the kitchen to the bar, Takoda is about keeping things simple: great food,
-            refreshing drinks, and an atmosphere where you can relax and enjoy yourself.
+            Grab a bite, order a drink, and settle in. From tavern favorites to cold drafts and
+            cocktails, Takoda has something for every kind of night.
           </p>
 
           <ul>
-            <li>Tavern Favorites</li>
-            <li>Cold Drinks and Drafts</li>
-            <li>Cocktails and Specialty Drinks</li>
-            <li>Something for Every Appetite</li>
-            <li>A Place to Hang Out and Unwind</li>
+            <li>- Tavern Favorites</li>
+            <li>- Cold Drinks and Drafts</li>
+            <li>- Cocktails and Specialty Drinks</li>
+            <li>- Something for Every Appetite</li>
           </ul>
 
           <Link to="/menu" className="button1">
             Explore the Menu
           </Link>
+        </div>
+      </div>
+
+      <div className="home-row">
+        <div className="row-text">
+          <h2>Weekday Happy Hour</h2>
+
+          <p>
+            Make your weekdays a little better. Join us Monday through Friday from 3PM–8PM for Happy
+            Hour, featuring appetizer and drink specials. Grab a seat, bring some friends, and stay
+            awhile.
+          </p>
+          <h3>MON-FRI from 3:00 PM - 8:00 PM</h3>
+        </div>
+        <div className="row-media">
+          <img src={takodaBar} alt="Inside Takoda Tavern" />
         </div>
       </div>
 
@@ -85,8 +78,8 @@ export function HomePage() {
           <h2>Come by for Live Music</h2>
 
           <p>
-            Check out what's on the menu, see what's happening around the tavern, and get a feel for
-            what makes Takoda a place worth coming back to.
+            Good music makes a good night better. Check out the upcoming lineup and join us for live
+            music, drinks, and a night with friends.
           </p>
 
           <Link to="/upcoming" className="row-button">
@@ -97,20 +90,20 @@ export function HomePage() {
 
       <div className="home-row">
         <div className="row-media">
-          <img src={takodaBar} alt="Inside Takoda Tavern" />
+          <img src={takodaOutside} alt="Takoda Tavern" />
         </div>
         <div className="row-text">
-          <h2>Your Neighborhood Tavern</h2>
-
+          <h2>Welcome to Takoda</h2>
           <p>
-            Takoda is the kind of place you can drop into without much of a plan. Come by for
-            dinner, meet friends at the bar, catch the game, or stay for another round.
+            Since opening in Parker in 2009, Takoda Tavern has been a place for good food, cold
+            drinks, live music, and good company. The name Takoda means “friend to everyone” and
+            that's the spirit we try to bring to every table, every night. Come in for a meal, meet
+            up with friends, or stay awhile and enjoy the atmosphere.
           </p>
 
-          <p>
-            We're here for the casual nights, the celebrations, the after-work drinks, and
-            everything in between.
-          </p>
+          <Link to="/contact" className="row-button">
+            Learn More
+          </Link>
         </div>
       </div>
 

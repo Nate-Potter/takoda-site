@@ -98,6 +98,10 @@
   text-shadow: 0 0 16px rgba(255, 255, 255, 1);
 }
 
+.focus {
+  background-color: rgba(223, 223, 223, 0.2);
+}
+
 /*----------------------------------- ROW -----------------------------------------*/
 
 .home-row {
@@ -132,6 +136,16 @@
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
+.row-text h3 {
+  max-width: 75%;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "GaretBook";
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+}
+
 .row-text p {
   max-width: 75%;
   margin: 20px 0;
@@ -142,7 +156,7 @@
 }
 .row-text ul {
   max-width: 75%;
-  margin: 20px 0;
+  margin-block: 0 40px;
   list-style: none;
 }
 
@@ -202,12 +216,15 @@
   align-items: center;
   height: 75vh;
   width: 100%;
+  overflow: hidden;
 }
 .image-row img {
   position: relative;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: blur(2px);
+  transform: scale(1.08);
 }
 
 .image-text {
@@ -217,6 +234,7 @@
   justify-content: center;
   text-align: center;
   max-width: 50%;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 1);
 }
 .image-row h2 {
   max-width: 75%;
@@ -227,7 +245,6 @@
   font-weight: 100;
   text-align: center;
   color: rgb(255, 255, 255);
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
 .image-row p {
@@ -238,19 +255,24 @@
   text-align: center;
   line-height: 1.5;
 }
-.image-row .row-button {
-}
-
 @media (max-width: 800px) {
   .home-page {
     flex-direction: column;
     height: 100%;
   }
-  .home-row {
-    flex-direction: column;
+
+  .hero {
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: fit-content;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero-filter {
+    height: 100vh;
   }
   .hero-title {
     margin: 50% auto;
@@ -258,10 +280,22 @@
   }
   .hero-title h1 {
     font-size: 3.5em;
-    color: rgb(227, 200, 255);
   }
   .hero-title h2 {
     font-size: 1.6em;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .button1 {
+    margin: 10px;
+  }
+  .home-row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
   }
   .row-text {
     width: 100%;
@@ -269,10 +303,20 @@
     margin: 20px auto;
   }
   .row-text h2 {
+    max-width: 80%;
+    margin-block: 10px;
+    padding: 0;
+    font-size: 2.2em;
     line-height: 1.25;
-    margin-bottom: 50px;
     text-align: center;
   }
+  .row-text p {
+    font-size: 1.2em;
+  }
+  .row-text li {
+    font-size: 1.2em;
+  }
+
   .row-text.right {
     width: 100%;
     margin: 0 auto;
@@ -281,12 +325,12 @@
     width: 100%;
     margin: 0 auto;
   }
-  .row-image {
-    width: 80%;
+  .row-media {
+    width: 100%;
     justify-content: center;
     margin: 0 auto;
   }
-  .row-image img {
+  .row-media img {
     width: 100%;
     margin-block: 10px;
   }

@@ -9,11 +9,19 @@ import takoda6 from "../assets/images/takoda6.jpeg";
 import takoda7 from "../assets/images/takoda7.jpeg";
 import takoda8 from "../assets/images/takoda8.jpeg";
 import takoda9 from "../assets/images/takoda9.jpeg";
+import takoda10 from "../assets/images/takoda10.jpeg";
+import takoda11 from "../assets/images/takoda11.jpeg";
+import takoda12 from "../assets/images/takoda12.jpeg";
 
 const slidesData = [
   {
     id: 1,
     image: takoda6,
+    caption: "Takoda",
+  },
+  {
+    id: 2,
+    image: takoda10,
     caption: "Takoda",
   },
   {
@@ -27,7 +35,12 @@ const slidesData = [
     caption: "Takoda",
   },
   {
-    id: 4,
+    id: 5,
+    image: takoda12,
+    caption: "Takoda",
+  },
+  {
+    id: 6,
     image: takoda9,
     caption: "Takoda",
   },
