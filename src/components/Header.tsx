@@ -6,7 +6,7 @@ import takodaLogo from "../assets/images/takoda-logo.png";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faBars, faPhone, faXmark, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faXmark, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 import { urls } from "../constants/urls";
 
