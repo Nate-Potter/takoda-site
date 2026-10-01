@@ -21,7 +21,7 @@ export function HomePage() {
             </h1>
             <h2>Here, everyone is a friend.</h2>
             <div className="hero-buttons">
-              <Link to="/menu" className="button1 focus">
+              <Link to="/menu" className="button1 highlight">
                 Explore Our Menu
               </Link>
               <Link to="/upcoming" className="button1">
@@ -60,7 +60,7 @@ export function HomePage() {
             </div>
           </dl>
         </div>
-        <div className="row-media">
+        <div className="row-media mobile-hide">
           <img src={takodaBar} alt="Inside Takoda Tavern" />
         </div>
       </div>
@@ -91,17 +91,19 @@ export function HomePage() {
 
       <div className="image-row">
         <img src={takodaMusic} alt="Live Music" />
-        <div className="image-text">
-          <h2>Come by for Live Music</h2>
+        <div className="row-filter">
+          <div className="image-text">
+            <h2>Come by for Live Music</h2>
 
-          <p>
-            Good music makes a good night better. Check out the upcoming lineup and join us for live
-            music, drinks, and a night with friends.
-          </p>
+            <p>
+              Good music makes a good night better. Check out the upcoming lineup and join us for
+              live music, drinks, and a night with friends.
+            </p>
 
-          <Link to="/upcoming" className="row-button">
-            Upcoming Events
-          </Link>
+            <Link to="/upcoming" className="row-button">
+              Upcoming Events
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -124,7 +126,7 @@ export function HomePage() {
         </div>
       </div>
 
-      <div className="home-row">
+      <div className="home-row grid">
         <div className="row-text">
           <h2>Come Hang Out</h2>
 

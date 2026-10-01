@@ -116,6 +116,7 @@ ul {
   }
   .open-icon {
     font-size: 2.5em;
+    /* color: rgba(255, 255, 255, 0.3); */
   }
 
   .close-button {

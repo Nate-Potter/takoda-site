@@ -12,7 +12,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-top">
-        <div className="column">
+        <div className="footer-column">
           <h2 className="">TAKODA TAVERN</h2>
           <div className="footer-address">
             <p>12365 Pine Bluffs Way</p>
@@ -20,7 +20,7 @@ export function Footer() {
             <p>(720) 851-5302</p>
           </div>
         </div>
-        <dl className="column">
+        <dl className="footer-column">
           <h3>Hours</h3>
           <div className="footer-hours">
             <dt>MON-THUR:</dt>
@@ -39,7 +39,7 @@ export function Footer() {
             <dd>8 AM - 12 AM</dd>
           </div>
         </dl>
-        <nav className="column">
+        <nav className="footer-column">
           <h3>Site</h3>
           <ul className="footer-navigation">
             <li>
@@ -55,12 +55,12 @@ export function Footer() {
             </li>
             <li>
               <Link to="/contact" className="footer-link">
-                Contact Us
+                Contact
               </Link>
             </li>
             <li>
               <Link to="/upcoming" className="footer-link">
-                Upcoming Events
+                Upcoming
               </Link>
             </li>
             <li>
@@ -70,7 +70,7 @@ export function Footer() {
             </li>
           </ul>
         </nav>
-        <div className="column">
+        <div className="footer-column">
           <h3>Connect</h3>
           <ul className="footer-contact">
             <li>

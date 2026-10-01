@@ -6,7 +6,7 @@ import takodaLogo from "../assets/images/takoda-logo.png";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faBars, faPhone, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faPhone, faXmark, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 import { urls } from "../constants/urls";
 
@@ -37,7 +37,7 @@ export function Header() {
         {/* Mobile Menu */}
         {/* Mobile Menu Button -- This button is hidden from desktop version with CSS*/}
         <button className="open-button" onClick={toggleMobileMenu}>
-          {isMobileMenuOpen ? <p></p> : <Icon icon={faBars} className="open-icon" />}
+          {isMobileMenuOpen ? <p></p> : <Icon icon={faChevronDown} className="open-icon" />}
         </button>
         {isMobileMenuOpen && (
           <nav className="mobile-navigation">
