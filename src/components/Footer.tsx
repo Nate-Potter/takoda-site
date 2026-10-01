@@ -54,18 +54,18 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="footer-link">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link to="/upcoming" className="footer-link">
-                Upcoming
+              <Link to="/events" className="footer-link">
+                Events
               </Link>
             </li>
             <li>
               <Link to="/photos" className="footer-link">
                 Photos
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="footer-link">
+                Contact
               </Link>
             </li>
           </ul>

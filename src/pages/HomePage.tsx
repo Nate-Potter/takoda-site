@@ -5,7 +5,6 @@ import takodaMusic from "../assets/images/takoda-music.png";
 import { HeroSwiper } from "../components/HeroSwiper";
 import { RowSwiper } from "../components/RowSwiper";
 import "../styles/home-page.css";
-// import "../styles/swiper.css";
 
 export function HomePage() {
   return (
@@ -14,17 +13,16 @@ export function HomePage() {
         <HeroSwiper />
         <div className="hero-filter">
           <div className="hero-title">
-            <h1>
-              TAKODA
-              <br />
-              TAVERN
-            </h1>
-            <h2>Here, everyone is a friend.</h2>
+            <div className="hero-brand">
+              <h1>TAKODA</h1>
+              <h2>TAVERN</h2>
+            </div>
+            <h3>Here, everyone is a friend.</h3>
             <div className="hero-buttons">
               <Link to="/menu" className="button1 highlight">
                 Explore Our Menu
               </Link>
-              <Link to="/upcoming" className="button1">
+              <Link to="/events" className="button1">
                 Upcoming Events
               </Link>
             </div>
@@ -32,7 +30,7 @@ export function HomePage() {
         </div>
       </div>
 
-      <div className="home-row">
+      <div className="home-row short">
         <div className="row-text">
           <h2>Weekday Happy Hour</h2>
           <h3>
@@ -83,7 +81,7 @@ export function HomePage() {
             <li>- Something for Every Appetite</li>
           </ul>
 
-          <Link to="/menu" className="button1">
+          <Link to="/menu" className="row-button">
             Explore the Menu
           </Link>
         </div>
@@ -100,7 +98,7 @@ export function HomePage() {
               live music, drinks, and a night with friends.
             </p>
 
-            <Link to="/upcoming" className="row-button">
+            <Link to="/events" className="row-button highlight">
               Upcoming Events
             </Link>
           </div>
@@ -135,7 +133,7 @@ export function HomePage() {
             Pull up a seat. We'll see you at Takoda.
           </p>
 
-          <Link to="/contact" className="button1">
+          <Link to="/contact" className="row-button">
             Find Takoda
           </Link>
         </div>

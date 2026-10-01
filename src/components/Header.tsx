@@ -22,9 +22,9 @@ export function Header() {
   const navLinks = [
     { label: "Home", path: "/" },
     { label: "Menu", path: "/menu" },
-    { label: "Contact", path: "/contact" },
-    { label: "Upcoming", path: "/upcoming" },
+    { label: "Events", path: "/events" },
     { label: "Photos", path: "/photos" },
+    { label: "Contact", path: "/contact" },
   ];
 
   return (

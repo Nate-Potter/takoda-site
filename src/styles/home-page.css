@@ -63,9 +63,21 @@
   margin: 15% auto;
   text-align: center;
 }
-
+.hero-brand {
+  text-align: center;
+  margin: 0 auto;
+}
 .hero-title h1 {
   margin: 0 auto;
+  color: rgb(255, 255, 255);
+  font-family: "GaretBook";
+  font-size: 10em;
+  font-weight: 100;
+  line-height: 1;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+}
+.hero-title h2 {
+  /* margin: 10px auto; */
   color: rgb(255, 255, 255);
   font-family: "GaretBook";
   font-size: 6em;
@@ -74,15 +86,14 @@
   text-shadow: 0 0 4px rgba(0, 0, 0, 1);
 }
 
-.hero-title h2 {
+.hero-title h3 {
   margin: 20px auto;
   font-family: "BrandinkLight";
   font-size: 2.8em;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1;
   text-shadow: 0 0 4px rgba(0, 0, 0, 1);
 }
-
 /* ------------------------ Hero Buttons ------------------------------- */
 
 .hero-buttons {
@@ -197,7 +208,7 @@
 
 .row-text ul {
   max-width: 75%;
-  margin: 0 0 40px;
+  margin-block: 10px 20px;
   list-style: none;
 }
 
@@ -360,11 +371,14 @@
   }
 
   .hero-title h1 {
-    font-size: 3.5em;
+    font-size: 5em;
   }
 
   .hero-title h2 {
-    font-size: 1.6em;
+    font-size: 3em;
+  }
+  .hero-title h3 {
+    font-size: 1.5em;
   }
 
   .hero-buttons {
