@@ -1,0 +1,54 @@
+.menu-page {
+  display: flex;
+  flex-direction: column;
+}
+.menu-categories {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menu-category {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  /* box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8); */
+}
+/* .menu-category:hover {
+  width: 27%;
+  transition: width 0.s ease;
+} */
+
+.menu-category img {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  filter: blur(3px);
+}
+.menu-category:hover img {
+  filter: blur(0px);
+  transition: filter 0.3s ease;
+}
+.menu-category p {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  margin: 0 auto;
+  font-family: "GaretBook";
+  font-size: 4em;
+  text-shadow: 0 0 40px rgba(0, 0, 0, 1);
+}
+
+.menu-category:hover p {
+  font-size: 5em;
+  transition: font-size 0.3s ease;
+}
