@@ -93,6 +93,27 @@ export function HomePage() {
         </div>
       </div>
 
+      <div className="home-row">
+        <div className="menu-categories">
+          <Link to="/menu#breakfast" className="menu-category">
+            <img src={breakfast} />
+            <p className="category-name">Breakfast</p>
+          </Link>
+          <Link to="/menu#appetizers" className="menu-category">
+            <img src={appetizers} />
+            <p className="category-name">Appetizers</p>
+          </Link>
+          <Link to="/menu#entrees" className="menu-category">
+            <img src={entrees} />
+            <p className="category-name">Entrees</p>
+          </Link>
+          <Link to="/menu#drinks" className="menu-category">
+            <img src={drinks} />
+            <p className="category-name">Drinks</p>
+          </Link>
+        </div>
+      </div>
+
       <div className="image-row">
         <img src={takodaMusic} alt="Live Music" />
         <div className="row-filter">
@@ -149,26 +170,6 @@ export function HomePage() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-      <div className="home-row">
-        <div className="menu-categories">
-          <Link to="/menu#breakfast" className="menu-category">
-            <img src={breakfast} />
-            <p className="category-name">Breakfast</p>
-          </Link>
-          <Link to="/menu#appetizers" className="menu-category">
-            <img src={appetizers} />
-            <p className="category-name">Appetizers</p>
-          </Link>
-          <Link to="/menu#entrees" className="menu-category">
-            <img src={entrees} />
-            <p className="category-name">Entrees</p>
-          </Link>
-          <Link to="/menu#drinks" className="menu-category">
-            <img src={drinks} />
-            <p className="category-name">Drinks</p>
-          </Link>
         </div>
       </div>
     </div>
